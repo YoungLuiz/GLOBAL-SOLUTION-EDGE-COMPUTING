@@ -83,5 +83,8 @@ O limite de energia pode ser ajustado diretamente no código através da variáv
 ```cpp
 int limiteEnergia = 800;  // Ajuste o valor conforme necessário
 
+## Captura de Tela do Projeto
+
+![Imagem do Projeto](image/captura_projeto.png)
 
 
