@@ -85,4 +85,5 @@ O limite de energia pode ser ajustado diretamente no código através da variáv
 ## Captura de Tela do Projeto
 
 Clique [aqui](image/Captura%20de%20tela%202024-11-20%20232546.png) para visualizar a captura em tamanho maior.
+<br/>
 Link do projeto: https://wokwi.com/projects/414886988115281921
