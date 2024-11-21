@@ -85,6 +85,6 @@ int limiteEnergia = 800;  // Ajuste o valor conforme necessário
 
 ## Captura de Tela do Projeto
 
-![Imagem do Projeto](image/captura_projeto.png)
+![Imagem do Projeto]image/Captura de tela 2024-11-20 232546.png
 
 
