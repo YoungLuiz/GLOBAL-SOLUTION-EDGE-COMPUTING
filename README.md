@@ -80,8 +80,7 @@ Garantir que o processo de carregamento de baterias seja feito de maneira segura
 
 O limite de energia pode ser ajustado diretamente no código através da variável `limiteEnergia`. O valor desta variável define o nível em que o carregamento é interrompido (no intervalo de 0 a 1023).
 
-```cpp
-int limiteEnergia = 800;  // Ajuste o valor conforme necessário
+
 
 ## Captura de Tela do Projeto
 
