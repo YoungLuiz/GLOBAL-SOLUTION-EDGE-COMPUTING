@@ -45,18 +45,14 @@ Garantir que o processo de carregamento de baterias seja feito de maneira segura
 - **Resistor de 10kΩ** (para o sensor LDR)
 - **Fonte de energia** (para o Arduino e o sistema de carregamento)
 
-## Dependências
-
-Não há dependências externas no código, apenas as bibliotecas padrão do Arduino.
-
 ## Instruções de Uso
 
 ### Passo 1: Conexões
 
 1. **Sensor LDR**:
-   - Conecte um terminal do LDR ao pino analógico `A0` do Arduino.
-   - Conecte o outro terminal do LDR a um resistor de 10kΩ, com o outro terminal do resistor ligado ao GND do Arduino.
-
+   - Conecte o A0 do LDR ao pino analógico `A0` do Arduino.
+   - Conecte o GND do LDR no resistor e no terra da PROTOBOARD.
+   - Conecte o VCC do LDR no positivo da PROTOBOARD
 2. **LEDs**:
    - **LED Verde**: Conecte o cátodo (perna mais curta) ao GND e o ânodo ao pino digital `13`.
    - **LED Vermelho**: Conecte o cátodo ao GND e o ânodo ao pino digital `11`.
