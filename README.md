@@ -88,10 +88,11 @@ A biblioteca `Servo.h` é necessária para controlar o servo motor. Ela já est�
 3. Confira os valores no Monitor Serial para verificar o funcionamento.  
 
 ---
+## **Captura de Tela do Projeto**
 
-## **Estrutura de Arquivos**  
+Clique [aqui](https://wokwi.com/projects/415208501165138945) para visualizar o projeto no Wokwi.
 
-- `seguidor_solar.ino`: Código principal do projeto.  
+ 
 
 ---
 
