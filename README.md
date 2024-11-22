@@ -12,7 +12,6 @@ Este projeto consiste em um protótipo de seguidor solar automatizado que ajusta
 - [Dependências](#dependências)  
 - [Instruções de Uso](#instruções-de-uso)  
 - [Estrutura de Arquivos](#estrutura-de-arquivos)  
-- [Licença](#licença)  
 
 ---
 
@@ -44,8 +43,7 @@ O objetivo do projeto é aumentar a eficiência na captação de energia solar, 
 - **Hardware:**  
   - Arduino UNO (ou compatível)  
   - 2 Sensores LDR  
-  - Servo Motor  
-  - Resistores (10kΩ para os sensores LDR)  
+  - Servo Motor    
   - Fonte de energia (5V para o servo motor e Arduino)  
   - Protoboard e fios para conexões  
 
@@ -66,8 +64,7 @@ A biblioteca `Servo.h` é necessária para controlar o servo motor. Ela já est�
 
 1. **Sensores LDR:**  
    - Conecte o LDR da esquerda ao pino analógico A0.  
-   - Conecte o LDR da direita ao pino analógico A1.  
-   - Conecte os outros terminais dos LDRs ao GND via resistores de 10kΩ.  
+   - Conecte o LDR da direita ao pino analógico A1.   
 
 2. **Servo Motor:**  
    - Conecte o pino de sinal do servo ao pino digital 3.  
