@@ -1,7 +1,3 @@
-Aqui está o README atualizado com base no código que você enviou:  
-
----
-
 # **Projeto de Seguidor Solar com Arduino**  
 
 Este projeto consiste em um protótipo de seguidor solar automatizado que ajusta a posição dos painéis solares para maximizar a captação de energia. Utilizando sensores LDR (Light Dependent Resistor) e um servo motor controlado por Arduino, o sistema monitora a intensidade da luz solar em diferentes direções e posiciona os painéis de forma eficiente.  
