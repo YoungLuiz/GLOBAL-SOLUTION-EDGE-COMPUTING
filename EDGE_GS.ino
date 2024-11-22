@@ -1,51 +1,40 @@
-int LDRPin = A0; 
-int ledG = 13; 
-int ledR = 11;
-int ledB = 3;
-int relePin = 2;  
+#include <Servo.h>
 
-int LDRValue = 0; 
-int limiteEnergia = 800;
+int initial_position = 90;
+int LDR1 = A0;
+int LDR2 = A1;
+int erro = 5;     
+int servopin = 3;
+int meio = 90;
 
-void setup() {  
-  pinMode(ledG, OUTPUT);   
-  pinMode(ledR, OUTPUT); 
-  pinMode(ledB, OUTPUT);  
-  pinMode(relePin, OUTPUT); 
+Servo myServo;
 
-  Serial.begin(9600);        
-}
-
-void loop() { 
-  LDRValue = analogRead(LDRPin);  
-
-  Serial.println(LDRValue);  
-
-  
-  if (LDRValue >= limiteEnergia) {
-    digitalWrite(ledB, HIGH);   
-    digitalWrite(ledG, LOW);    
-    digitalWrite(ledR, LOW);    
-
+void setup() { 
+  myServo.attach(servopin);  
+  pinMode(LDR1, INPUT);   
+  pinMode(LDR2, INPUT);
+  myServo.write(initial_position);   //Move servo at 90 degree
+  Serial.begin(9600);
+  delay(2000);           
+}  
  
-    digitalWrite(relePin, LOW);  
-
-  } else {
-    digitalWrite(ledG, HIGH);   
-    digitalWrite(ledR, LOW);    
-    digitalWrite(ledB, LOW);    
-
-    
-    digitalWrite(relePin, HIGH);  
-  }
-
+void loop() {
+  int left_ldr = analogRead(LDR1); // read  LDR 1
+  int right_ldr = analogRead(LDR2); // read  LDR 2
   
-  if (LDRValue < 500) {
-    digitalWrite(ledR, HIGH);  
-    delay(150);                 
-    digitalWrite(ledR, LOW); 
-    digitalWrite(ledG, LOW);  
+  if(left_ldr > right_ldr){
+    meio = meio + 10;
+    myServo.write(meio);
+  } else if (right_ldr > left_ldr){
+    meio = meio - 10;
+    myServo.write(meio);
+  } else {
+    Serial.println("Centralizado: " + String(left_ldr) + String(right_ldr));
   }
 
-  delay(1000);  
+  Serial.println("Esquerda: " + String(left_ldr));
+  Serial.println("Direita: " + String(right_ldr));
+  delay(2000);
+
 }
+
