@@ -94,6 +94,9 @@ A biblioteca `Servo.h` é necessária para controlar o servo motor. Ela já est�
 
 Clique [aqui](https://wokwi.com/projects/415208501165138945) para visualizar o projeto no Wokwi.
 
+## Video do Projeto
+https://youtu.be/oPnglz4LTrU?si=q0j9oi5974QGg6-N
+
  
 
 ---
