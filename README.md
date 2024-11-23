@@ -6,6 +6,7 @@ Este projeto consiste em um protótipo de seguidor solar automatizado que ajusta
 ## Integrantes
 
 Luiz Gustavo Araújo de Lima e Silva - RM560110
+<br/>
 Lucas de Almeida Villar - RM560005
 
 ## **Sumário**  
